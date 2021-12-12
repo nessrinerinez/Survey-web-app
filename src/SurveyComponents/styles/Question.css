@@ -1,0 +1,114 @@
+ul{
+    padding-inline-start: 0 !important;
+}
+.choice{
+    height: 50px;
+}
+.headline-question{
+    text-align: left;
+    font-size: 24px;
+    font-weight: normal;
+}
+.question-index {
+    border: solid 1px #2c2f32;
+    font-weight: bold;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    color: #2c2f32;
+    transition: all 1s;
+    cursor: pointer;
+}
+.question-index:disabled {
+    opacity: 0.5;
+    cursor:not-allowed;
+}
+.is-answered{
+    border: solid 1px green;
+    color: green;
+    background-color: #0080000d;
+}
+.is-active {
+    background: #2c2f32;
+    color: white;
+}
+.question-index.is-active.is-answered{
+    background-color: green;
+    color: white;
+    border: solid 1px green;
+}
+.input-text {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    color: rgb(81, 73, 57);
+    padding: 0px 0px 8px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    box-shadow: rgb(81 73 57 / 30%) 0px 1px;
+}
+textarea.input-text{
+    min-height: 120px;
+}
+.li-choice{
+    border: solid 1px #e6e6e6;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgba(81, 73, 57, 0.1);
+    box-shadow: rgb(81 73 57 / 60%) 0px 0px 0px 1px inset;
+    color: rgb(81, 73, 57);
+    min-width: 75px;
+    min-height: 40px;
+    padding: 4px 15px;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 15px;
+}
+.li-choice:hover{
+    background-color: rgba(81, 73, 57, 0.5);
+   ;
+    font-size: 17px;
+    color: black;
+}
+.li-choice.selected{
+    background-color: green;
+    color: white;
+    font-size: 17px;
+}
+.current-question{
+    min-height: 330px;
+    margin: 0 30px 0 50px;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+.question-type{
+    text-align: left;
+    font-size: 13px;
+    font-style: italic;
+    opacity: 0.7;
+}
+.check-mark-icon{
+    margin-left: 50px;
+}
+.question-count span{
+    font-size: 15px;
+    font-style: italic;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+   }
+    to {
+        margin-left: 0%;
+        width: 100%;
+   }
+}
+@media screen and (max-width: 600px) {
+    .current-question{
+        margin: 0 20px;
+   }
+}

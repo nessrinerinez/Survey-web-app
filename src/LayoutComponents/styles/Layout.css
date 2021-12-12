@@ -1,0 +1,22 @@
+.layout-left {
+    width: calc(40% - 2px);
+    float: left;
+    border-right: solid 2px #373b3e;
+}
+.layout-right {
+    width: 60%;
+    float: right;
+}
+.main-container{
+    margin-top: 90px;
+}
+
+@media screen and (max-width: 600px) {
+    .layout-left{
+        display: none;
+    }
+    .layout-right {
+        width: 100%;
+    }
+  }
+ 

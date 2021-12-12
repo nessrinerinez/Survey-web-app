@@ -1,0 +1,15 @@
+.left-bar {
+     background-image: url('../../images/left-bar-img.png'); 
+    height: 100%;
+    background-color: white;
+    min-height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: all 3s;
+    transition-delay: 1s;
+    cursor: pointer;
+}
+
+.left-bar:hover {
+    background-image: url('../../images/Buy-Survey-Responses.png');
+}
